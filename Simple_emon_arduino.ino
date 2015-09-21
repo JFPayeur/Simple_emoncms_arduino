@@ -1,15 +1,15 @@
 /*
   Arduino & OpenEnergyMonitor 
   
-  This sketch connects to an emoncms server and makes a request using
-  Arduino Ethernet shield
+  This sketch connects to an emoncms server and send data 
   
   Author: Mirco Piccin aka pitusso
   Modified and simplified by J-F Payeur
 
-  Tested on Arduino2560 + ethernet sheild (no sd card) 
-  Tested on Arduino Ethernet (no sd card) 
-  Tested on Arduino Uno +  ethernet sheild (no sd card) 
+  Tested on Arduino Ethernet
+  Tested on Arduino Uno +  ethernet sheild
+  Tested on Arduino2560 + ethernet sheild 
+  
   
   based on    http://arduino.cc/en/Tutorial/WebClientRepeating
    
@@ -21,10 +21,10 @@
   byte mac[] = {0x90, 0xA2, 0xDA, 0x04, 0x69, 0xD5};
 
   // fill in an available IP address on your network here, if dhcp auto config fail 
-  IPAddress ip(192, 168, 81, 82);
+  IPAddress ip(192, 168, 1, 82);
   IPAddress subnet(255, 255, 255, 0);
   IPAddress DNS(8, 8, 8, 8);
-  IPAddress gw(192, 168, 81, 1);
+  IPAddress gw(192, 168, 1, 1);
   EthernetClient client;
 
  // Sensor pins
